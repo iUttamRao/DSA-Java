@@ -1,3 +1,4 @@
+// based on Binary Search;
 public class FirstAndLastIndex {
         public static void main(String[] args) {
             int arr[]={10,20,21,22,30,30,30,30,30,30,90,100};
