@@ -1,5 +1,3 @@
-import java.util.concurrent.ForkJoinPool;
-
 //Sliding window technique
 public class SubArraySum {
     public static void main(String[] args) {
