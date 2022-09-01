@@ -5,12 +5,12 @@ public class TwoD{
         // int arr[][]=new int[3][3];
         // int []arr2[]=new int[3][3];
         // int [][]arr3=new int[3][3];
-        int arr[][]={{10,20,30},{40,50,60}};
+        int arr[][]={{10,20},{40,50},{60,90}};
         // int arr5[][]=new int[3][];
         // arr5[0] =new int [10];
         // arr5[1] =new int [20];
         // arr5[2] =new int [30];
-
+        System.out.println(arr[0].length);
         // Row major order
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
