@@ -1,7 +1,17 @@
 public class KnapSack {
 
+    static void printMatrix(int [][]matrix){
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[i].length;j++){
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static int matrix[][];
     static int tabulation(int prices[],int weights[],int maxWeight,int totalItems){
-        int matrix[][]= new int[totalItems+1][maxWeight+1];
+        matrix= new int[totalItems+1][maxWeight+1];
         //fill the 0th Row and fill the First column for the base case
         for(int i=0;i<=maxWeight;i++){
             matrix[0][i]=0; // Not need for java
@@ -48,12 +58,15 @@ public class KnapSack {
         return 0;
     }
     public static void main(String[] args) {
-        int maxWeight=3; // maximum we have 3 kg capacity bag
-        int prices[]={60,100,120};
-        int weights[]={1,2,2};
+        int maxWeight=10; // maximum we have 3 kg capacity bag
+        int prices[]={10,40,30,50};
+        int weights[]={5,4,6,3};
        int maxProfit =knapSach01(weights, prices, maxWeight, 0);
        System.out.println(maxProfit);
 
        System.out.println(tabulation(prices, weights, maxWeight, prices.length));
+
+       System.out.println("Matrix is....");
+       printMatrix(matrix);
     }
 }
