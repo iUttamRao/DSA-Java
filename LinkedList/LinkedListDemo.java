@@ -10,7 +10,15 @@ import java.util.Scanner;
 //         next=null;
 //     }
 // }
-
+class DoublyNode<T>{
+    T data;
+    Node<T> prev;
+    Node<T> next;
+}
+class CircularNode<T>{
+    T data;
+    Node<T> next; // next contains the address of start node
+}
 class Node<T>{
     T data; // Node Data Part
     Node next; // Node Reference / Next Node Reference store here
